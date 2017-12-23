@@ -26,6 +26,7 @@
 #ifdef QCOM_BSP
 #define QCOM_HARDWARE
 #endif
+#define MR0_AUDIO_BLOB
 
 #include <hardware/audio.h>
 #include <hardware_legacy/audio_policy_conf.h>

@@ -27,6 +27,7 @@
 #if defined(QCOM_BSP)
 #define QCOM_HARDWARE
 #endif
+#define MR0_AUDIO_BLOB
 
 #include <hardware/audio.h>
 
@@ -42,8 +43,9 @@
 #warning Compile likely fails or module may malfunction.
 #endif
 
-#define AUDIO_API_VERSION_MAJ           ((AUDIO_DEVICE_API_VERSION_CURRENT >> 8) & 0xff)
-#define AUDIO_API_VERSION_MIN           (AUDIO_DEVICE_API_VERSION_CURRENT & 0xff)
+// Droid 4 hack
+#define AUDIO_API_VERSION_MAJ           1
+#define AUDIO_API_VERSION_MIN           0
 
 #define AUDIO_API_VERSION_GET_MAJ(x)    ((x >> 8) & 0xff)
 #define AUDIO_API_VERSION_GET_MIN(x)    (x & 0xff)

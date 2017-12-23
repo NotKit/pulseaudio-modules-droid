@@ -27,6 +27,7 @@
 #endif
 #include <pulsecore/modargs.h>
 
+#define MR0_AUDIO_BLOB
 #include <hardware/audio.h>
 
 /* From recent audio_policy_conf.h */

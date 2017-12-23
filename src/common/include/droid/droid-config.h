@@ -28,6 +28,7 @@
 #include <pulsecore/modargs.h>
 
 #include <android-config.h>
+#define MR0_AUDIO_BLOB
 #include <hardware/audio.h>
 
 #include <droid/version.h>
