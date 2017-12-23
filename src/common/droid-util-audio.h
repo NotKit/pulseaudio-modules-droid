@@ -22,6 +22,8 @@
 #ifndef _DROID_UTIL_AUDIO_H_
 #define _DROID_UTIL_AUDIO_H_
 
+#define MR0_AUDIO_BLOB
+
 #ifdef QCOM_BSP
 #define QCOM_HARDWARE
 #endif
