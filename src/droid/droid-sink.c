@@ -389,8 +389,10 @@ static void thread_func(void *userdata) {
                 thread_render(u);
                 thread_write(u);
 
-                if (u->write_time > u->write_threshold)
-                    sleept = u->buffer_time;
+                /* Commented out as temporary fix for audio distortion
+                 * on Xiaomi Redmi Note 2 (hermes)
+                 if (u->write_time > u->write_threshold)
+                    sleept = u->buffer_time; */
 
                 pa_rtpoll_set_timer_relative(u->rtpoll, sleept);
             }
